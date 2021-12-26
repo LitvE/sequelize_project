@@ -1,22 +1,22 @@
 {
   "development": {
-    "username": "postgres",
+    "username": "postqres",
     "password": "postgres",
-    "database": "database_development",
+    "database": "todo_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "username": "postgres",
+    "username": "postqres",
     "password": "postgres",
-    "database": "database_test",
+    "database": "todo_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
+    "username": "postqres",
     "password": "postgres",
-    "database": "database_production",
+    "database": "todo_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
