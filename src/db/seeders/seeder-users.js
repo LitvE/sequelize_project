@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 
 function generateUsers() {
   const users = [];
-  for (let i = 0; i < 20; i++) {
+  for (let i = 1; i <= 20; i++) {
     users.push({
       firstName: `Name${i}`,
       lastName: `Surname${i}`,

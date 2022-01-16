@@ -1,0 +1,9 @@
+POST http://localhost:5000/task/
+Content-Type: application/json
+
+{
+    "isDone": false,
+    "userId": 45,
+    "value": "This task for user 15",
+    "deadline": "2022-01-15"    
+}
