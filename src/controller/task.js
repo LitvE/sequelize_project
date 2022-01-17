@@ -1,14 +1,18 @@
 import {Task} from '../db/models';
 import {User} from '../db/models';
 
+const db = require('../db/models/index.js');
+const queryInterface = db.sequelize.queryInterface
+
 //controller for creating Task
-//НЕ РАБОТАЕТ... userId NULL
 export async function createTask (req, res){
     
     try {
         const {body} = req;
-        
-        const newTask = await Task.create(body);
+        //Вариант 1
+        //const newTask = await Task.create(body);
+        //Вариант 2
+        const newTask = await queryInterface.bulkInsert('Tasks', [body]);
         if(newTask){
             return res.status(201).send(newTask);
         }else{

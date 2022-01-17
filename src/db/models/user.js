@@ -14,7 +14,6 @@ module.exports = (sequelize, DataTypes) => {
           onDelete: 'RESTRICT',
           onUpdate: 'CASCADE',
         },
-        as: 'tasks',
       });
 
       // User.associate = function (models) {

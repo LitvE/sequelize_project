@@ -4,6 +4,8 @@ Content-Type: application/json
 {
     "isDone": false,
     "userId": 45,
-    "value": "This task for user 15",
-    "deadline": "2022-01-15"    
+    "value": "Some new task to do!!!",
+    "deadline": "2022-01-17",
+    "createdAt": "2022-01-15",
+    "updatedAt": "2022-01-15"
 }

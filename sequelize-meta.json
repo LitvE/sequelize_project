@@ -1,3 +1,6 @@
 [
-  "create-task.js"
+  "create-comment.js",
+  "create-task.js",
+  "create-user.js",
+  "some-model.js"
 ]
