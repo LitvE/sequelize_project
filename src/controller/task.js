@@ -10,9 +10,9 @@ export async function createTask (req, res){
     try {
         const {body} = req;
         //Вариант 1
-        //const newTask = await Task.create(body);
+        const newTask = await Task.create(body);
         //Вариант 2
-        const newTask = await queryInterface.bulkInsert('Tasks', [body]);
+        //const newTask = await queryInterface.bulkInsert('Tasks', [body]);
         if(newTask){
             return res.status(201).send(newTask);
         }else{
